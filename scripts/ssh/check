@@ -1,0 +1,18 @@
+#!/bin/bash
+/show/description "Check if a user is connected to SSH"
+/show/listecho "Red led connected" $WARN
+lastState=9
+while [ 1 ]
+do
+	#/show/userConnected
+	state=$(/show/userConnected)
+	if [ $lastState -ne $state ];then
+		lastState=$state
+		if [ $state -eq 0 ];then
+			ledRedOff
+		else
+			ledRedOn
+		fi
+	fi
+sleep 1
+done

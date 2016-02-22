@@ -1,0 +1,3 @@
+/do/led/blink 21 & > /dev/null 2>&1
+/do/led/blink 20 & > /dev/null 2>&1
+/do/led/blink 16 & > /dev/null 2>&1

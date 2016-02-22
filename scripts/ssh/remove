@@ -1,0 +1,4 @@
+#!/bin/bash
+/show/description "[REMOVE SERVICE] SSH is used"
+/show/listecho "Red Led" $ERR
+/do/supervisor/remove sshCheck

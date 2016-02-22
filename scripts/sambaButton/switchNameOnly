@@ -1,0 +1,7 @@
+#!/bin/bash
+isNameOnly=$(/do/samba/isNameOnly)
+if [ $isNameOnly -eq 1 ];then
+	/do/samba/sharePiget
+else
+	/do/samba/nameOnly
+fi

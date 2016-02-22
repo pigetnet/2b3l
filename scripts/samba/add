@@ -1,0 +1,4 @@
+#!/bin/bash
+/show/description "[CREATE SERVICE] Samba is used"
+/show/listecho "Yellow Led" $WARN
+/do/supervisor/create sambaCheck /do/ledsButtons/scripts/samba/check

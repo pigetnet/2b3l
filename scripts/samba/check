@@ -1,0 +1,32 @@
+#!/bin/bash
+/show/description "Check if a user is connected to samba"
+/show/listecho "Yellow led connected" $WARN
+lastStateUser=9
+lastStateNameOnly=9
+while [ 1 ]
+do
+	#/do/samba/userConnected
+	stateUser=$(/do/samba/userConnected)
+	# echo $stateUser
+	if [ $lastStateUser -ne $stateUser ];then
+		lastStateUser=$stateUser
+		if [ $stateUser -eq 0 ];then
+			ledYellowOff
+		else
+			ledYellowOn
+		fi
+	fi
+
+	stateNameOnly=$(/do/samba/isNameOnly)
+	echo $stateNameOnly
+	if [ $lastStateNameOnly -ne $stateNameOnly ];then
+		lastStateNameOnly=$stateNameOnly
+		if [ $stateNameOnly -eq 1 ];then
+			ledGreenOff
+		else
+			ledGreenOn
+		fi
+	fi
+
+sleep 1
+done

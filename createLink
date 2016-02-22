@@ -1,4 +1,4 @@
-/pi/linker /do/ledBbuttons/redOn  ledRedOn
+/pi/linker /do/ledsButtons/redOn  ledRedOn
 /pi/linker /do/ledsButtons/redOff  ledRedOff
 /pi/linker /do/ledsButtons/greenOff  ledGreenOff
 /pi/linker /do/ledsButtons/greenOn  ledGreenOn

@@ -1,0 +1,9 @@
+#!/bin/bash
+/do/ledsButtons/scripts/samba/remove
+/do/ledsButtons/scripts/ssh/remove
+/do/ledsButtons/scripts/ssh/add
+/do/ledsButtons/scripts/samba/add
+
+cp /do/ledsButtons/config/security.cfg /user/config/buttons/buttons.cfg
+
+/do/buttons/restart
