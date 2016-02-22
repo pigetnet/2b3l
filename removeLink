@@ -1,0 +1,8 @@
+rm /usr/local/bin/ledRedOn
+rm /usr/local/bin/ledRedOff
+rm /usr/local/bin/ledGreenOff
+rm /usr/local/bin/ledGreenOn
+rm /usr/local/bin/ledYellowOn
+rm /usr/local/bin/ledYellowOff
+rm /usr/local/bin/ledAllOff
+rm /usr/local/bin/ledAllOn
