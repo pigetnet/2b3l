@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Pinout"
+echo "----------------------------"
+echo "BUTTON 1: 19  | 16 : GREEN"
+echo "BUTTON 2: 26  | 20 : YELLOW"
+echo "GROUND  : GND | 21 : RED"
+echo "----------------------------"
+echo " "
+echo "     |---| |---|          "
+echo "     |USB| |USB|          "
+echo "     |---| |---|          "
