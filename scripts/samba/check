@@ -11,9 +11,9 @@ do
 	if [ $lastStateUser -ne $stateUser ];then
 		lastStateUser=$stateUser
 		if [ $stateUser -eq 0 ];then
-			ledYellowOff
+			/do/ledsButtons/yellowOff
 		else
-			ledYellowOn
+			/do/ledsButtons/yellowOn
 		fi
 	fi
 
@@ -22,9 +22,9 @@ do
 	if [ $lastStateNameOnly -ne $stateNameOnly ];then
 		lastStateNameOnly=$stateNameOnly
 		if [ $stateNameOnly -eq 1 ];then
-			ledGreenOff
+			/do/ledsButtons/greenOff
 		else
-			ledGreenOn
+			/do/ledsButtons/greenOn
 		fi
 	fi
 
