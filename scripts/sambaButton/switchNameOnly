@@ -3,5 +3,5 @@ isNameOnly=$(/do/samba/isNameOnly)
 if [ $isNameOnly -eq 1 ];then
 	/do/samba/sharePiget
 else
-	/do/samba/nameOnly
+	/do/samba/shareNothing
 fi
