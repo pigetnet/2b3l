@@ -1,0 +1,6 @@
+redState=$(/do/ledsButtons/redState)
+greenState=$(/do/ledsButtons/greenState)
+yellowState=$(/do/ledsButtons/yellowState)
+button1State=$(/do/ledsButtons/button1State)
+button2State=$(/do/ledsButtons/button2State)
+echo "red:$redState;yellow:$yellowState;green:$greenState;button1:$button1State;button2:$button2State"
