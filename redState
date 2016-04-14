@@ -1,1 +1,11 @@
-/do/led/state 21
+#!/bin/bash
+if [ $# -ne 0 ] || [[ $1 == "--help" ]] || [ $(id -u) -ne 0 ];then
+	/show/messagebox "$0"
+	/show/info "[beta] [gpio] [led] [electronics] [wiringpi]"
+	/show/usageDescription "get state of red led (pin 21)"
+	/show/usage "$0"
+	/show/return "0 : off -- 1 : on"
+	exit 1
+else
+  /do/led/state 21
+fi

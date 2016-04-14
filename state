@@ -1,3 +1,4 @@
+#!/bin/bash
 redState=$(/do/ledsButtons/redState)
 greenState=$(/do/ledsButtons/greenState)
 yellowState=$(/do/ledsButtons/yellowState)

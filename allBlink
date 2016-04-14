@@ -1,3 +1,12 @@
-/do/led/blink 21 & > /dev/null 2>&1
-/do/led/blink 20 & > /dev/null 2>&1
-/do/led/blink 16 & > /dev/null 2>&1
+#!/bin/bash
+if [ $# -ne 0 ] || [[ $1 == "--help" ]] || [ $(id -u) -ne 0 ];then
+	/show/messagebox "$0"
+	/show/info "[beta] [gpio] [led] [electronics]"
+	/show/usageDescription "Blink all leds"
+	/show/usage "$0"
+	exit 1
+else
+	/do/led/blink 21 &
+	/do/led/blink 20 &
+	/do/led/blink 16
+fi

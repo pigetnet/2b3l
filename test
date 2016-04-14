@@ -2,5 +2,6 @@
 /show/listecho "Buttons will control all leds"
 /show/listecho "Press button 1 to turn them ON"
 /show/listecho "Press button 2 to turn them OFF"
-cp /do/ledsButtons/config/buttons.cfg /user/config/buttons/buttons.cfg
+cp /do/ledsButtons/config/leds.cfg /user/config/buttons/buttons.cfg
+/show/file /user/config/buttons/buttons.cfg
 /do/buttons/restart

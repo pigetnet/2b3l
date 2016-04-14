@@ -1,7 +1,5 @@
 #!/bin/bash
 /pi/install samba
-/pi/install buttons
-/pi/install led
 
 /do/ledsButtons/scripts/samba/remove
 /do/ledsButtons/scripts/ssh/remove

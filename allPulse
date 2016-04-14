@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -ne 0 ] || [[ $1 == "--help" ]] || [ $(id -u) -ne 0 ];then
+	/show/messagebox "$0"
+	/show/info "[beta] [gpio] [led] [electronics] [pwm]"
+	/show/usageDescription "Turn on/off all leds slowly"
+	/show/usage "$0"
+	exit 1
+else
+  /do/led/pulse 21 &
+  /do/led/pulse 20 &
+  /do/led/pulse 16
+fi

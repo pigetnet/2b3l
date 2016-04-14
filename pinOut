@@ -1,12 +1,28 @@
 #!/bin/bash
+if [ $# -ne 0 ] || [[ $1 == "--help" ]] || [ $(id -u) -ne 0 ];then
+	/show/messagebox "$0"
+	/show/info "[beta] [gpio] [led] [electronics] [schematics] [buttons]"
+	/show/usageDescription "Display how to plug leds and buttons"
+	/show/usage "$0"
+	exit 1
+else
+  r=$(tput setaf 1)
+  y=$(tput setaf 3)
+  b=$(tput setaf 6)
+  p=$(tput setaf 5)
+  n=$(tput sgr 0)
+  w=$(tput bold)
+  g=$(tput setaf 2)
 
-echo "Pinout"
-echo "----------------------------"
-echo "BUTTON 1: 19  | 16 : GREEN"
-echo "BUTTON 2: 26  | 20 : YELLOW"
-echo "GROUND  : GND | 21 : RED"
-echo "----------------------------"
-echo " "
-echo "     |---| |---|          "
-echo "     |USB| |USB|          "
-echo "     |---| |---|          "
+  cat<<EOF
+        ${r}2B3L Pinout${n}    
++----------------------------+
+|${p}BUTTON 1: 19${n}  | ${g}16 : GREEN${n}  |
+|${b}BUTTON 2: 26${n}  | ${y}20 : YELLOW${n} |
+|GROUND  : GND | ${r}21 : RED${n}    |
++----------------------------+
+|            ${g}USB${n}             |
+|----------------------------+
+EOF
+
+fi
