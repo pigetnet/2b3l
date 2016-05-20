@@ -1,0 +1,58 @@
+#!/bin/bash
+/show/description "LEDS"
+
+/show/listecho "ALL BLINK" $PICOLOR
+read
+/do/2b3l/allBlink
+
+/show/listecho "ALL ON" $PICOLOR
+read
+/do/2b3l/allOn
+/do/2b3l/state
+
+/show/listecho "ALL OFF" $PICOLOR
+read
+/do/2b3l/allOff
+/do/2b3l/state
+ 
+/show/listecho "ALL PULSE" $PICOLOR
+read
+/do/2b3l/allPulse
+
+/show/listecho "RED ON : 1" $PICOLOR
+read
+/do/2b3l/redOn
+/do/2b3l/redState
+/do/2b3l/state
+
+/show/listecho "RED OFF : 0" $PICOLOR
+read
+/do/2b3l/redOff
+/do/2b3l/redState
+/do/2b3l/state
+
+/show/listecho "YELLOW ON : 1" $PICOLOR
+read
+/do/2b3l/yellowOn
+/do/2b3l/yellowState
+/do/2b3l/state
+
+/show/listecho "YELLOW OFF : 0" $PICOLOR
+read
+/do/2b3l/yellowOff
+/do/2b3l/yellowState
+/do/2b3l/state
+
+/show/listecho "GREEN ON : 1" $PICOLOR
+read
+/do/2b3l/greenOn
+/do/2b3l/greenState
+/do/2b3l/state
+
+/show/listecho "GREEN OFF : 0" $PICOLOR
+read
+/do/2b3l/greenOff
+/do/2b3l/greenState
+/do/2b3l/state
+
+/show/description "TEST COMPLETED"

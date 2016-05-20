@@ -1,11 +1,11 @@
 #!/bin/bash
 /pi/install samba
 
-/do/ledsButtons/scripts/samba/remove
-/do/ledsButtons/scripts/ssh/remove
+/do/2b3l/scripts/samba/remove
+/do/2b3l/scripts/ssh/remove
 
-/do/ledsButtons/scripts/ssh/add
-/do/ledsButtons/scripts/samba/add
+/do/2b3l/scripts/ssh/add
+/do/2b3l/scripts/samba/add
 
-cp /do/ledsButtons/config/security.cfg /user/config/buttons/buttons.cfg
+cp /do/2b3l/config/security.cfg /user/config/buttons/buttons.cfg
 /do/buttons/restart

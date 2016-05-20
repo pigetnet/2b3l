@@ -1,0 +1,4 @@
+/do/led/tests/remove
+/do/buttons/tests/remove
+rm -rf /do/led/
+rm -rf /do/buttons/

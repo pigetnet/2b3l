@@ -1,7 +1,7 @@
 #!/bin/bash
-redState=$(/do/ledsButtons/redState)
-greenState=$(/do/ledsButtons/greenState)
-yellowState=$(/do/ledsButtons/yellowState)
-button1State=$(/do/ledsButtons/button1State)
-button2State=$(/do/ledsButtons/button2State)
+redState=$(/do/2b3l/redState)
+greenState=$(/do/2b3l/greenState)
+yellowState=$(/do/2b3l/yellowState)
+button1State=$(/do/2b3l/button1State)
+button2State=$(/do/2b3l/button2State)
 echo "red:$redState;yellow:$yellowState;green:$greenState;button1:$button1State;button2:$button2State"

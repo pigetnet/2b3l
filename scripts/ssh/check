@@ -9,9 +9,9 @@ do
 	if [ $lastState -ne $state ];then
 		lastState=$state
 		if [ $state -eq 0 ];then
-			/do/ledsButtons/redOff
+			/do/2b3l/redOff
 		else
-			/do/ledsButtons/redOn
+			/do/2b3l/redOn
 		fi
 	fi
 sleep 1

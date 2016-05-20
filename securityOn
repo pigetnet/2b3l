@@ -1,4 +1,4 @@
 #!/bin/bash
-/do/ledsButtons/scripts/samba/start
-/do/ledsButtons/scripts/ssh/start
+/do/2b3l/scripts/samba/start
+/do/2b3l/scripts/ssh/start
 /do/buttons/start

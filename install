@@ -1,4 +1,31 @@
 #!/bin/bash
+echo -ne $ERR
+
+cat<<EOF
+██████╗ ██████╗ ██████╗ ██╗     
+╚════██╗██╔══██╗╚════██╗██║     
+ █████╔╝██████╔╝ █████╔╝██║     
+██╔═══╝ ██╔══██╗ ╚═══██╗██║     
+███████╗██████╔╝██████╔╝███████╗
+╚══════╝╚═════╝ ╚═════╝ ╚══════╝                                    
+EOF
+/do/2b3l/pinOut
+
 /pi/install led
 /pi/install buttons
 /pi/install supervisor
+
+
+echo -ne $OK
+
+cat<<EOF
+██████╗ ██████╗ ██████╗ ██╗     
+╚════██╗██╔══██╗╚════██╗██║     
+ █████╔╝██████╔╝ █████╔╝██║     
+██╔═══╝ ██╔══██╗ ╚═══██╗██║     
+███████╗██████╔╝██████╔╝███████╗
+╚══════╝╚═════╝ ╚═════╝ ╚══════╝                                    
+EOF
+/show/listecho "Test : /do/2b3l/test" $OK
+/show/listecho "Setup : /do/2b3l/setup" $WARN
+/show/listecho "Security Mode : /do/2b3l/security" $ERR

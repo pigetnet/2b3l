@@ -1,0 +1,29 @@
+#!/bin/bash
+/show/description "BUTTONS"
+
+/show/listecho "PRESS BUTTON 1 : 1" $PICOLOR
+read
+/do/2b3l/button1State
+/do/2b3l/state
+
+/show/listecho "STOP : 0" $PICOLOR
+read
+/do/2b3l/button1State
+/do/2b3l/state
+
+/show/listecho "PRESS BUTTON 2 : 1" $PICOLOR
+read
+/do/2b3l/button2State
+/do/2b3l/state
+
+
+/show/listecho "STOP : 0" $PICOLOR
+read
+/do/2b3l/button2State
+/do/2b3l/state
+
+/show/listecho "PRESS TWO BUTTONS" $PICOLOR
+read
+/do/2b3l/state
+
+/show/description "TEST COMPLETED"

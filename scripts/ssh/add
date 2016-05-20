@@ -1,4 +1,4 @@
 #!/bin/bash
 /show/description "[CREATE SERVICE] SSH is used"
 /show/listecho "Red Led" $ERR
-/do/supervisor/create sshCheck /do/ledsButtons/scripts/ssh/check
+/do/supervisor/create sshCheck /do/2b3l/scripts/ssh/check
