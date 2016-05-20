@@ -1,7 +1,8 @@
 #!/bin/bash
-/show/listecho "Buttons will control all leds"
-/show/listecho "Press button 1 to turn them ON"
-/show/listecho "Press button 2 to turn them OFF"
+/do/2b3l/logoRed
 cp /do/2b3l/config/leds.cfg /user/config/buttons/buttons.cfg
 /show/file /user/config/buttons/buttons.cfg
 /do/buttons/restart
+/do/2b3l/logoGreen
+/show/listecho "Button 1 to turn leds ON" $OK
+/show/listecho "Button 2 to turn leds OFF" $ERR

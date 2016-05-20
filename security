@@ -1,6 +1,9 @@
 #!/bin/bash
+/do/2b3l/logoRed
+
 /pi/install samba
 
+/do/2b3l/allOff
 /do/2b3l/scripts/samba/remove
 /do/2b3l/scripts/ssh/remove
 
@@ -9,3 +12,12 @@
 
 cp /do/2b3l/config/security.cfg /user/config/buttons/buttons.cfg
 /do/buttons/restart
+
+/do/2b3l/logoGreen
+
+/show/listecho "Red Led: Terminal" $ERR
+/show/listecho "Yellow Led: Filesharing in use" $WARN
+/show/listecho "Green Led: Filesharing active" $OK
+echo ""
+/show/listecho "Button 1: Toggle Filesharing" $PICOLOR
+/show/listecho "Button 2: Shutdown" $INFO

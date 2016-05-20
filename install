@@ -1,14 +1,8 @@
 #!/bin/bash
 echo -ne $ERR
 
-cat<<EOF
-██████╗ ██████╗ ██████╗ ██╗     
-╚════██╗██╔══██╗╚════██╗██║     
- █████╔╝██████╔╝ █████╔╝██║     
-██╔═══╝ ██╔══██╗ ╚═══██╗██║     
-███████╗██████╔╝██████╔╝███████╗
-╚══════╝╚═════╝ ╚═════╝ ╚══════╝                                    
-EOF
+/do/2b3l/logoGreen
+
 /do/2b3l/pinOut
 
 /pi/install led
@@ -16,16 +10,8 @@ EOF
 /pi/install supervisor
 
 
-echo -ne $OK
+/do/2b3l/logoRed
 
-cat<<EOF
-██████╗ ██████╗ ██████╗ ██╗     
-╚════██╗██╔══██╗╚════██╗██║     
- █████╔╝██████╔╝ █████╔╝██║     
-██╔═══╝ ██╔══██╗ ╚═══██╗██║     
-███████╗██████╔╝██████╔╝███████╗
-╚══════╝╚═════╝ ╚═════╝ ╚══════╝                                    
-EOF
 /show/listecho "Test : /do/2b3l/test" $OK
 /show/listecho "Setup : /do/2b3l/setup" $WARN
 /show/listecho "Security Mode : /do/2b3l/security" $ERR

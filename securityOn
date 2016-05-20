@@ -1,4 +1,5 @@
 #!/bin/bash
+/do/2b3l/allOff
 /do/2b3l/scripts/samba/start
 /do/2b3l/scripts/ssh/start
 /do/buttons/start
