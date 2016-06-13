@@ -17,4 +17,4 @@ You can find more information on commands and schematics here :
 https://github.com/pigetnet/2b3l/tree/master/doc
 
 # Pinout
-![Pinout](https://raw.githubusercontent.com/pigetnet/led/master/doc/schema_2b3l.png)
+![Pinout](https://raw.githubusercontent.com/pigetnet/2b3l/master/doc/schema_2b3l.png)
