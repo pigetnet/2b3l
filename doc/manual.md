@@ -121,3 +121,4 @@
 |:-----------------------|:---------------------------------------------|
 | Description            | get state of yellow led (pin 20)             |
 | Info                   | [beta] [gpio] [led] [electronics] [wiringpi] |
+

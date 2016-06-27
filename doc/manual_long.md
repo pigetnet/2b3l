@@ -84,6 +84,10 @@
 | Usage             | /do/2b3l/pinOut                                                                                                                 |
 | Variables         | r=$(tput setaf 1), y=$(tput setaf 3), b=$(tput setaf 6), p=$(tput setaf 5), n=$(tput sgr 0), w=$(tput bold), g=$(tput setaf 2), |
 
+| /do/2b3l/README.MD   |                        |
+|:---------------------|:-----------------------|
+| Info                 | [alpha] [undocumented] |
+
 | /do/2b3l/redOff   |                                   |
 |:------------------|:----------------------------------|
 | Info              | [beta] [gpio] [led] [electronics] |
@@ -173,3 +177,4 @@
 | Description            | get state of yellow led (pin 20)             |
 | Usage                  | /do/2b3l/yellowState                         |
 | Modules                | /do/led/state 20,                            |
+
