@@ -1,0 +1,5 @@
+#!/bin/bash
+/do/2b3l/allOff
+/do/2b3l/scripts/samba/remove
+/do/2b3l/scripts/ssh/remove
+/do/buttons/remove

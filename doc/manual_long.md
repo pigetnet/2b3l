@@ -129,6 +129,11 @@
 | Info                  | [alpha] [undocumented]                                                                        |
 | Modules               | /do/2b3l/allOff, /do/2b3l/scripts/samba/start, /do/2b3l/scripts/ssh/start, /do/buttons/start, |
 
+| /do/2b3l/securityRemove   |                                                                                                  |
+|:--------------------------|:-------------------------------------------------------------------------------------------------|
+| Info                      | [alpha] [undocumented]                                                                           |
+| Modules                   | /do/2b3l/allOff, /do/2b3l/scripts/samba/remove, /do/2b3l/scripts/ssh/remove, /do/buttons/remove, |
+
 | /do/2b3l/securityRestart   |                                            |
 |:---------------------------|:-------------------------------------------|
 | Info                       | [alpha] [undocumented]                     |

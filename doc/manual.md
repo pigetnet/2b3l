@@ -87,6 +87,10 @@
 |:----------------------|:-----------------------|
 | Info                  | [alpha] [undocumented] |
 
+| /do/2b3l/securityRemove   |                        |
+|:--------------------------|:-----------------------|
+| Info                      | [alpha] [undocumented] |
+
 | /do/2b3l/securityRestart   |                        |
 |:---------------------------|:-----------------------|
 | Info                       | [alpha] [undocumented] |
